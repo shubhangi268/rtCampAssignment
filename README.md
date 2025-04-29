@@ -43,3 +43,12 @@ This project includes UI tests for sorting, checkout process, and Visual test
           -  visual_step.py
       -  LoginFeature.feature
   -  environment.py
+ 
+  ### Best Practices Followed
+    - Page Object Model
+    - Tags for test scenarios
+    - Visual Testing using take_screenshot()
+ 
+  ### Test Credentials
+  USERNAME = "standard_user"
+  PASSWORD = "secret_sauce"
