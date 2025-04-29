@@ -1,0 +1,28 @@
+@AUTORETRY_1
+Feature: Saucedemo application scenarios # Demo/Features/LoginFeature.feature:2
+
+  Background: Logging to application  # Demo/Features/LoginFeature.feature:4
+
+  @SORT_ITEM
+  Scenario: Verify sorting order Z-A on All Items page        # Demo/Features/LoginFeature.feature:8
+    Given User logged into Saucedemo application              # Demo/Features/steps/login_steps.py:11
+    When User sort products by name from Z to A               # Demo/Features/steps/sort_steps.py:5
+    Then User should see the items sorted in descending order # Demo/Features/steps/sort_steps.py:12
+
+  @SORT_PRICE
+  Scenario: Verify price order high to low on All Items page  # Demo/Features/LoginFeature.feature:13
+    Given User logged into Saucedemo application              # Demo/Features/steps/login_steps.py:11
+    When User sort products by price from high to low         # Demo/Features/steps/sort_steps.py:18
+    Then User should see the items sorted by descending price # Demo/Features/steps/sort_steps.py:26
+
+  @CHECKOUT
+  Scenario: Complete checkout with multiple items         # Demo/Features/LoginFeature.feature:18
+    Given User logged into Saucedemo application          # Demo/Features/steps/login_steps.py:11
+    When User add multiple items to the cart and checkout # Demo/Features/steps/checkout_steps.py:5
+    Then User should complete the purchase successfully   # Demo/Features/steps/checkout_steps.py:13
+
+  @SCREENSHOT
+  Scenario: Visual regression on All Items page                      # Demo/Features/LoginFeature.feature:23
+    Given User logged into Saucedemo application                     # Demo/Features/steps/login_steps.py:11
+    Then User should capture a visual snapshot of the inventory page # Demo/Features/steps/visual_steps.py:6
+

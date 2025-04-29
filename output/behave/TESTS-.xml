@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="55.25011706352234" tests='4' skipped='0'
+name="Uresloginfeature" failures='0' errors='0'><testcase time="13.006099939346313" name="Verify_Sorting_Order_Z-A_On_All_Items_Page" status="passed"
+         classname="Saucedemo_Application_Scenarios"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @SORT_ITEM   @AUTORETRY_1
+                scenario: Verify sorting order Z-A on All Items page
+                given User logged into Saucedemo application ... Status.passed in 11.64s 
+                when User sort products by name from Z to A ... Status.passed in 1.082s 
+                then User should see the items sorted in descending order ... Status.passed in 0.2817s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="11.70558476448059" name="Verify_Price_Order_High_To_Low_On_All_Items_Page" status="passed"
+         classname="Saucedemo_Application_Scenarios"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @SORT_PRICE   @AUTORETRY_1
+                scenario: Verify price order high to low on All Items page
+                given User logged into Saucedemo application ... Status.passed in 10.34s 
+                when User sort products by price from high to low ... Status.passed in 1.065s 
+                then User should see the items sorted by descending price ... Status.passed in 0.2967s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="20.56966209411621" name="Complete_Checkout_With_Multiple_Items" status="passed"
+         classname="Saucedemo_Application_Scenarios"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @CHECKOUT   @AUTORETRY_1
+                scenario: Complete checkout with multiple items
+                given User logged into Saucedemo application ... Status.passed in 9.59s 
+                when User add multiple items to the cart and checkout ... Status.passed in 10.9s 
+                then User should complete the purchase successfully ... Status.passed in 0.08301s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase><testcase time="9.968770265579224" name="Visual_Regression_On_All_Items_Page" status="passed"
+         classname="Saucedemo_Application_Scenarios"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @SCREENSHOT   @AUTORETRY_1
+                scenario: Visual regression on All Items page
+                given User logged into Saucedemo application ... Status.passed in 9.545s 
+                then User should capture a visual snapshot of the inventory page ... Status.passed in 0.4239s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>
