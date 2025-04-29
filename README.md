@@ -29,4 +29,7 @@ This project includes UI tests for sorting, checkout process, and Visual test
 -  To run individual scenario using
    - behavex Demo\Features --tags=@SCREENSHOT
  
-  saucedemo-playwright/ ├── Demo/Features/Pages ├── Features tests/                # TypeScript test files (.spec.ts) ├── pages/                # Page Object Model in TypeScript (.ts) ├── utils/                # Helper functions (likely TypeScript) ├── playwright.config.ts  #
+### Project stucture
+├── Demo/
+| ├──Features
+| ├──Pages 
