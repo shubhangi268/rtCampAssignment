@@ -33,4 +33,13 @@ This project includes UI tests for sorting, checkout process, and Visual test
 - Demo
   -  Features
       -  Pages
+          - login_page.py
+          - checkout_page.py
+          - inventory_page.py
       -  Steps
+          -  login_step.py
+          -  sort_step.py
+          -  checkout_step.py
+          -  visual_step.py
+      -  LoginFeature.feature
+  -  environment.py
