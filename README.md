@@ -30,9 +30,7 @@ This project includes UI tests for sorting, checkout process, and Visual test
    - behavex Demo\Features --tags=@SCREENSHOT
  
 ### Project stucture
--- Demo
-     -- Features
-        -- Pages
-        -- Steps
-| ├──Features
-| ├──Pages 
+- Demo
+  -  Features
+      -  Pages
+      -  Steps
