@@ -50,5 +50,5 @@ This project includes UI tests for sorting, checkout process, and Visual test
     - Visual Testing using take_screenshot()
  
   ### Test Credentials
-  USERNAME = "standard_user"
-  PASSWORD = "secret_sauce"
+  **USERNAME** = "standard_user"
+  **PASSWORD** = "secret_sauce"
